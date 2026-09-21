@@ -1,10 +1,12 @@
 node_modules/
-.wrangler/
 dist/
 site/
+.wrangler/
 
 .env
 .env.*
 .dev.vars
 
 *.log
+.DS_Store
+Thumbs.db
