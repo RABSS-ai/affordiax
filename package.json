@@ -2,10 +2,12 @@
   "name": "affordiax",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./input.css -o ./output.css --minify"
+    "build:tailwind": "tailwindcss -i ./input.css -o ./output.css --minify",
+    "build:site": "npm run build:tailwind && node build.js",
+    "build": "npm run build:site"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.19",
     "wrangler": "^4.135.0"
   }
 }
