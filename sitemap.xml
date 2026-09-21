@@ -37,4 +37,27 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://affordiax.com/cost-of-living/new-york/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+  <url>
+    <loc>https://affordiax.com/cost-of-living/los-angeles/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://affordiax.com/cost-of-living/chicago/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://affordiax.com/cost-of-living/houston/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
