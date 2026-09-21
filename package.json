@@ -2,8 +2,8 @@
   "name": "affordiax",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build:css": "tailwindcss -i ./input.css -o ./output.css --minify",
+    "build": "npm run build:css && node build.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1",
