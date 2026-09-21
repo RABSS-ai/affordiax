@@ -1,0 +1,7 @@
+{
+  "name": "affordiax",
+  "compatibility_date": "2026-09-21",
+  "assets": {
+    "directory": "./deploy"
+  }
+}
