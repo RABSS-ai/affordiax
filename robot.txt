@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Private/admin areas
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /api/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /private/
+
+# Internal search/filter results
+Disallow: /search?
+Disallow: /*?search=
+Disallow: /*?sort=
+Disallow: /*?filter=
+
+# Sitemap
+Sitemap: https://YOURDOMAIN.com/sitemap.xml

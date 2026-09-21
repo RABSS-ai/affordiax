@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Dynamic routing for clean URLs: /usa/state/city/ -> city.php?state=$1&city=$2
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^usa/([^/]+)/([^/]+)/?$ city.php?state=$1&city=$2 [L,QSA]
+RewriteRule ^usa/([^/]+)/([^/]+)/index\.php$ city.php?state=$1&city=$2 [L,QSA]

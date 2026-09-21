@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LivingCost | Cost of Living, Salaries & Relocation Worldwide</title>
+  <meta name="description" content="Explore cost of living, salaries, housing, taxes, and relocation data across 50 U.S. states and hundreds of cities. Independent, research-backed benchmarks.">
+  <link rel="canonical" href="https://livingcost.org/usa/">
+
+  <!-- Structured Data: WebSite & Organization Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://livingcost.org/#organization",
+        "name": "LivingCost",
+        "url": "https://livingcost.org",
+        "logo": "https://livingcost.org/assets/logo.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://livingcost.org/#website",
+        "url": "https://livingcost.org/usa/",
+        "name": "LivingCost USA",
+        "publisher": { "@id": "https://livingcost.org/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://livingcost.org/usa/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Favicon (Modern SVG Inline Emoji) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+
+  <!-- Open Graph & Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LivingCost">
+  <meta property="og:title" content="LivingCost USA — Know What Life Really Costs">
+  <meta property="og:description" content="Compare cities, understand your salary, estimate living expenses, and plan your relocation with data-driven insights.">
+  <meta property="og:url" content="https://livingcost.org/usa/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Typography: Inter & Plus Jakarta Sans with Tabular Figures -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="output.css">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3752466116300045" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- 1. STICKY PREMIUM NAVIGATION -->
+  <header id="site-header">
+    <div class="nav-container">
+      <div class="nav-brand-group">
+        <a href="index.html" class="brand-logo" aria-label="LivingCost Homepage">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </div>
+          <div class="brand-text-block">
+            <span class="brand-name">LivingCost</span>
+            <span class="brand-edition">USA Edition</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center Navigation -->
+      <nav class="nav-center-menu" aria-label="Main Navigation">
+        <a href="#popular-cities" class="nav-item">Cities</a>
+        <a href="#explore-states" class="nav-item">States</a>
+        <a href="#salary-explorer" class="nav-item">Salary Explorer</a>
+        <a href="#city-comparison" class="nav-item">Compare</a>
+        <a href="#relocation-planner" class="nav-item">Relocation</a>
+        <a href="#relocation-guides" class="nav-item">Guides</a>
+      </nav>
+
+      <!-- Right Actions & Country Switcher -->
+      <div class="nav-right-actions">
+        <div class="country-switcher-wrapper">
+          <button class="country-btn" id="country-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Select Country">
+            <span class="flag-icon">🇺🇸</span>
+            <span class="country-code">USA</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          
+          <!-- International Expansion Dropdown -->
+          <div class="country-dropdown-menu" id="country-dropdown">
+            <div class="dropdown-header">Select Region</div>
+            <a href="#" class="country-opt active"><span class="flag">🇺🇸</span> United States <span class="badge-active">Active</span></a>
+            <a href="#" class="country-opt upcoming"><span class="flag">🇨🇦</span> Canada <span class="badge-soon">Soon</span></a>
+            <a href="#" class="country-opt upcoming"><span class="flag">🇬🇧</span> United Kingdom <span class="badge-soon">Soon</span></a>
+            <a href="#" class="country-opt upcoming"><span class="flag">🇦🇺</span> Australia <span class="badge-soon">Soon</span></a>
+            <a href="#" class="country-opt upcoming"><span class="flag">🇦🇪</span> UAE <span class="badge-soon">Soon</span></a>
+            <a href="#" class="country-opt upcoming"><span class="flag">🇩🇪</span> Germany <span class="badge-soon">Soon</span></a>
+            <a href="#" class="country-opt upcoming"><span class="flag">🇯🇵</span> Japan <span class="badge-soon">Soon</span></a>
+          </div>
+        </div>
+
+        <a href="#city-comparison" class="btn-primary-nav">Compare Cities</a>
+
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- 2. HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="badge-pulse"></span>
+            <span>2026 U.S. BENCHMARK DATA</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Know What Life <br><span class="highlight-text">Really Costs.</span>
+          </h1>
+
+          <p class="hero-subhead">
+            Explore living costs, salaries, housing, and quality of life across America. Compare cities, understand your take-home pay, and plan your relocation with clear, practical data.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#popular-cities" class="btn-hero-primary">Explore Cities</a>
+            <a href="#city-comparison" class="btn-hero-secondary">Compare Cost of Living</a>
+          </div>
+
+          <div class="hero-trust-caption">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span>Explore verified living costs across all 50 states and 380+ U.S. metro regions.</span>
+          </div>
+        </div>
+
+        <!-- 3. INTERACTIVE 3D USA MAP STAGE -->
+        <div class="hero-visual-col">
+          <div class="three-map-container" id="map-3d-wrapper">
+            <canvas id="three-usa-canvas"></canvas>
+            
+            <!-- Floating State Quick-Inspect Card -->
+            <div id="state-hover-card" class="state-inspect-card" aria-hidden="true">
+              <div class="inspect-header">
+                <span class="inspect-state-name" id="inspect-name">CALIFORNIA</span>
+                <span class="inspect-index" id="inspect-index">Cost Index: 142</span>
+              </div>
+              <div class="inspect-grid">
+                <div>
+                  <span class="inspect-lbl">Average Rent</span>
+                  <span class="inspect-val" id="inspect-rent">$2,850/mo</span>
+                </div>
+                <div>
+                  <span class="inspect-lbl">Median Income</span>
+                  <span class="inspect-val" id="inspect-income">$95,000</span>
+                </div>
+                <div>
+                  <span class="inspect-lbl">Safety Index</span>
+                  <span class="inspect-val" id="inspect-safety">48/100</span>
+                </div>
+                <div>
+                  <span class="inspect-lbl">Income Tax</span>
+                  <span class="inspect-val" id="inspect-tax">1.0% – 13.3%</span>
+                </div>
+              </div>
+              <a href="#explore-states" class="inspect-link" id="inspect-cta">View State Profile →</a>
+            </div>
+
+            <div class="map-hint-badge">Interactive 3D Map — Hover States to Inspect</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. GLOBAL SEARCH EXPERIENCE -->
+    <section class="global-search-section">
+      <div class="site-container">
+        <div class="search-card-outer">
+          <div class="search-input-box">
+            <svg class="search-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="global-search-input" placeholder="Search a city, state, salary or living cost (e.g. Austin, Texas vs Miami)..." autocomplete="off" aria-label="Global Search">
+            <button class="search-clear-btn" id="search-clear" aria-label="Clear Search">✕</button>
+          </div>
+
+          <!-- Autocomplete Dropdown Panel -->
+          <div class="autocomplete-panel" id="search-autocomplete-panel">
+            <div class="autocomplete-group">
+              <span class="group-title">Cities</span>
+              <div class="group-items" id="ac-cities"></div>
+            </div>
+            <div class="autocomplete-group">
+              <span class="group-title">States</span>
+              <div class="group-items" id="ac-states"></div>
+            </div>
+            <div class="autocomplete-group">
+              <span class="group-title">Salary & Relocation Guides</span>
+              <div class="group-items" id="ac-guides"></div>
+            </div>
+          </div>
+
+          <!-- Quick Search Chips -->
+          <div class="search-pills-row">
+            <span class="pills-label">Popular Searches:</span>
+            <button class="pill-chip" data-search="Austin, TX">Cost of living in Austin</button>
+            <button class="pill-chip" data-search="Miami, FL">Rent in Miami</button>
+            <button class="pill-chip" data-search="New York vs Austin">New York vs Austin</button>
+            <button class="pill-chip" data-search="Is $80,000 enough?">Is $80k enough in Denver?</button>
+            <button class="pill-chip" data-search="Texas">Taxes in Texas</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 19. ADVERTISEMENT CONTAINER (LEADERBOARD) -->
+    <div class="ad-placement-wrap">
+      <div class="ad-placeholder-box ad-leaderboard" style="padding: 10px 0;">
+        <span class="ad-flag" style="display: block; text-align: center; font-size: 10px; color: #94a3b8; margin-bottom: 5px;">ADVERTISEMENT</span>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3752466116300045"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+
+    <!-- 6. QUICK COST CALCULATOR -->
+    <section id="quick-calculator" class="calc-section">
+      <div class="site-container">
+        <div class="section-header-center">
+          <span class="subhead-badge">BUDGET ESTIMATOR</span>
+          <h2 class="section-title">How much do you need to live comfortably?</h2>
+          <p class="section-desc">Estimate monthly expenses, required gross income, and discretionary cushion for your household.</p>
+        </div>
+
+        <div class="calc-card-grid">
+          <!-- Inputs Column -->
+          <div class="calc-inputs-pane">
+            <div class="form-group">
+              <label for="calc-city-select">Select Metro Area</label>
+              <select id="calc-city-select" class="form-select">
+                <!-- Populated dynamically by data.js -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div class="label-with-val">
+                <label for="calc-salary-input">Annual Household Salary</label>
+                <span class="slider-val-badge" id="salary-display-val">$85,000</span>
+              </div>
+              <input type="range" id="calc-salary-input" min="30000" max="300000" step="5000" value="85000" class="form-range">
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="calc-household">Household Size</label>
+                <select id="calc-household" class="form-select">
+                  <option value="1">1 Adult (Single)</option>
+                  <option value="2">2 Adults (Couple)</option>
+                  <option value="3">Family of 3</option>
+                  <option value="4" selected>Family of 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="calc-housing-type">Housing Arrangement</label>
+                <select id="calc-housing-type" class="form-select">
+                  <option value="rent-1b">1-Bedroom Apartment</option>
+                  <option value="rent-2b" selected>2-Bedroom Apartment</option>
+                  <option value="rent-3b">3-Bedroom House</option>
+                  <option value="own">Mortgage (Median Home)</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn-calc-action" id="btn-recalc">Calculate Living Cost</button>
+          </div>
+
+          <!-- Live Output Results Pane -->
+          <div class="calc-results-pane">
+            <div class="results-header">
+              <div>
+                <span class="res-city-tag" id="res-city-name">Austin, Texas</span>
+                <h3 class="res-verdict-title">Comfort Level: <span class="text-teal" id="res-verdict">Comfortable</span></h3>
+              </div>
+              <div class="stat-badge-box">
+                <span class="stat-badge-lbl">Discretionary / Mo</span>
+                <span class="stat-badge-num" id="res-remaining">+$1,330</span>
+              </div>
+            </div>
+
+            <div class="cashflow-summary-grid">
+              <div class="summary-item">
+                <span class="item-label">Gross Salary</span>
+                <span class="item-val" id="res-gross">$85,000</span>
+              </div>
+              <div class="summary-item">
+                <span class="item-label">Est. Take-Home Pay</span>
+                <span class="item-val" id="res-takehome">$5,650/mo</span>
+              </div>
+              <div class="summary-item">
+                <span class="item-label">Total Monthly Expenses</span>
+                <span class="item-val text-coral" id="res-expenses">$4,320/mo</span>
+              </div>
+            </div>
+
+            <!-- Expense Category Visualizer Bars -->
+            <div class="expense-bars-stack">
+              <div class="bar-group">
+                <div class="bar-header">
+                  <span>Housing & Rent</span>
+                  <span id="bar-housing-val">$1,850 (43%)</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-housing" id="bar-housing" style="width: 43%"></div></div>
+              </div>
+
+              <div class="bar-group">
+                <div class="bar-header">
+                  <span>Food & Groceries</span>
+                  <span id="bar-food-val">$720 (17%)</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-food" id="bar-food" style="width: 17%"></div></div>
+              </div>
+
+              <div class="bar-group">
+                <div class="bar-header">
+                  <span>Transportation</span>
+                  <span id="bar-transit-val">$650 (15%)</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-transit" id="bar-transit" style="width: 15%"></div></div>
+              </div>
+
+              <div class="bar-group">
+                <div class="bar-header">
+                  <span>Healthcare</span>
+                  <span id="bar-health-val">$420 (10%)</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-health" id="bar-health" style="width: 10%"></div></div>
+              </div>
+
+              <div class="bar-group">
+                <div class="bar-header">
+                  <span>Utilities & Telecom</span>
+                  <span id="bar-utils-val">$320 (7%)</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-utils" id="bar-utils" style="width: 7%"></div></div>
+              </div>
+
+              <div class="bar-group">
+                <div class="bar-header">
+                  <span>Savings & Buffer</span>
+                  <span id="bar-savings-val">$360 (8%)</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-savings" id="bar-savings" style="width: 8%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 & 7. EXPLORE POPULAR CITIES (REAL PHOTOGRAPHY + 3D DEPTH) -->
+    <section id="popular-cities" class="cities-showcase-section">
+      <div class="site-container">
+        <div class="section-header-split">
+          <div>
+            <span class="subhead-badge">LOCAL BENCHMARKS</span>
+            <h2 class="section-title">Explore Popular U.S. Cities</h2>
+            <p class="section-desc">Key housing, income, and cost indexes across prime relocation destinations.</p>
+          </div>
+          <div class="cities-filter-chips" id="city-tier-filters">
+            <button class="chip active" data-filter="all">All Cities</button>
+            <button class="chip" data-filter="Affordable">Affordable</button>
+            <button class="chip" data-filter="Moderate">Moderate</button>
+            <button class="chip" data-filter="Expensive">High Cost</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Responsive City Cards Grid -->
+        <div class="city-cards-grid" id="city-grid-container">
+          <!-- Rendered dynamically by data.js & app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CITY COMPARISON (HEAD-TO-HEAD PARITY CALCULATOR) -->
+    <section id="city-comparison" class="comparison-section">
+      <div class="site-container">
+        <div class="section-header-center">
+          <span class="subhead-badge">PURCHASING POWER</span>
+          <h2 class="section-title">Your salary doesn't mean the same thing everywhere.</h2>
+          <p class="section-desc">Compare two cities to calculate true equivalent lifestyle and purchasing power.</p>
+        </div>
+
+        <div class="compare-card-main">
+          <!-- Selection Controls -->
+          <div class="compare-selectors-bar">
+            <div class="city-pick-box">
+              <label>City 1</label>
+              <select id="compare-city-a" class="compare-select"></select>
+            </div>
+
+            <div class="compare-vs-badge">VS</div>
+
+            <div class="city-pick-box">
+              <label>City 2</label>
+              <select id="compare-city-b" class="compare-select"></select>
+            </div>
+
+            <div class="salary-parity-input">
+              <label>Base Salary</label>
+              <div class="input-dollar-wrap">
+                <span>$</span>
+                <input type="number" id="compare-salary-base" value="100000" step="5000">
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Parity Statement -->
+          <div class="parity-callout-banner">
+            <div class="parity-stat-col">
+              <span class="parity-amount" id="parity-text-a">$100,000 in New York</span>
+            </div>
+            <div class="parity-arrow">≈</div>
+            <div class="parity-stat-col">
+              <span class="parity-amount highlight-teal" id="parity-text-b">$72,400 in Austin</span>
+            </div>
+            <p class="parity-explainer" id="parity-summary-sentence">
+              You need <strong>$27,600 less</strong> in Austin, TX to match your standard of living in New York, NY due to housing affordability and zero state income tax.
+            </p>
+          </div>
+
+          <!-- Category Differential Bars -->
+          <div class="category-diff-grid" id="compare-diff-grid">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SALARY EXPLORER -->
+    <section id="salary-explorer" class="salary-explorer-section">
+      <div class="site-container">
+        <div class="salary-card-outer">
+          <div class="salary-form-side">
+            <span class="subhead-badge">SALARY HEALTH CHECK</span>
+            <h2 class="section-title">Is your salary enough?</h2>
+            <p class="section-desc">Check if a job offer or current wage supports your standard of living in any target market.</p>
+
+            <div class="form-group">
+              <label>Target Annual Gross Salary</label>
+              <div class="input-dollar-wrap">
+                <span>$</span>
+                <input type="number" id="sal-input-amount" value="85000" step="5000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Target City</label>
+              <select id="sal-input-city" class="form-select"></select>
+            </div>
+
+            <div class="form-group">
+              <label>Household Type</label>
+              <select id="sal-input-household" class="form-select">
+                <option value="1">1 Adult (Single)</option>
+                <option value="2">2 Adults (No kids)</option>
+                <option value="3">Family with 1 Child</option>
+                <option value="4">Family with 2 Children</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="salary-viz-side">
+            <div class="sal-rating-pill" id="sal-badge-status">Good salary for a single adult</div>
+
+            <div class="sal-metrics-grid">
+              <div class="sal-metric-box">
+                <span class="sal-metric-lbl">Estimated Take-Home</span>
+                <span class="sal-metric-num text-teal" id="sal-takehome">$5,400<small>/mo</small></span>
+              </div>
+              <div class="sal-metric-box">
+                <span class="sal-metric-lbl">Essential Expenses</span>
+                <span class="sal-metric-num" id="sal-essentials">$3,650<small>/mo</small></span>
+              </div>
+              <div class="sal-metric-box">
+                <span class="sal-metric-lbl">Flexible Spending</span>
+                <span class="sal-metric-num" id="sal-flexible">$850<small>/mo</small></span>
+              </div>
+              <div class="sal-metric-box">
+                <span class="sal-metric-lbl">Potential Monthly Savings</span>
+                <span class="sal-metric-num text-blue" id="sal-savings">$900<small>/mo</small></span>
+              </div>
+            </div>
+
+            <p class="sal-disclaimer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              Estimates are informational and modeled using standard single/married deduction tax tables, median rent ratios, and localized BLS index weights. Individual circumstances may vary.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. COST BREAKDOWN (WHERE DOES YOUR MONEY GO?) -->
+    <section class="breakdown-section">
+      <div class="site-container">
+        <div class="section-header-center">
+          <span class="subhead-badge">NATIONAL SPENDING ANATOMY</span>
+          <h2 class="section-title">Where does your money go?</h2>
+          <p class="section-desc">Average spending distribution for typical U.S. households based on federal BLS Consumer Expenditure data.</p>
+        </div>
+
+        <div class="breakdown-card">
+          <div class="breakdown-chart-wrap">
+            <div class="donut-visual-container">
+              <svg viewBox="0 0 36 36" class="donut-svg" id="donut-svg-element">
+                <!-- Segments generated by script.js -->
+              </svg>
+              <div class="donut-center-label">
+                <span class="donut-center-num">100%</span>
+                <span class="donut-center-sub">Total Income</span>
+              </div>
+            </div>
+
+            <div class="breakdown-legend-list" id="breakdown-legend">
+              <div class="legend-row" data-pct="34"><span class="swatch color-housing"></span> Housing & Shelter — <strong>34%</strong></div>
+              <div class="legend-row" data-pct="17"><span class="swatch color-taxes"></span> Federal & State Taxes — <strong>17%</strong></div>
+              <div class="legend-row" data-pct="14"><span class="swatch color-transit"></span> Transportation & Gas — <strong>14%</strong></div>
+              <div class="legend-row" data-pct="13"><span class="swatch color-food"></span> Food & Groceries — <strong>13%</strong></div>
+              <div class="legend-row" data-pct="8"><span class="swatch color-health"></span> Healthcare & Insurance — <strong>8%</strong></div>
+              <div class="legend-row" data-pct="6"><span class="swatch color-utils"></span> Utilities & Energy — <strong>6%</strong></div>
+              <div class="legend-row" data-pct="8"><span class="swatch color-other"></span> Discretionary & Misc — <strong>8%</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. PREMIUM 3D RELOCATION DASHBOARD -->
+    <section id="relocation-planner" class="relocation-section">
+      <div class="site-container">
+        <div class="section-header-center">
+          <span class="subhead-badge">MIGRATION INTELLIGENCE</span>
+          <h2 class="section-title">Thinking about moving?</h2>
+          <p class="section-desc">See how your finances, tax liability, and savings potential shift before you pack your bags.</p>
+        </div>
+
+        <!-- Redesigned Premium Relocation Component Container -->
+        <div class="relo-dashboard-container">
+          
+          <!-- 1. ROUTE HEADER -->
+          <div class="relo-route-header">
+            <div class="relo-header-left">
+              <h3 id="hdr-origin-city">Los Angeles, CA</h3>
+              <span id="hdr-origin-state">California</span>
+            </div>
+            <div class="relo-header-center">
+              <span class="relo-move-label">Move from</span>
+              <div class="relo-airplane-track">
+                <svg class="relo-track-svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                  <path d="M 0 5 Q 50 0, 100 5" fill="none" stroke="rgba(20, 184, 166, 0.2)" stroke-width="1.5" stroke-dasharray="3 3"/>
+                </svg>
+                <div class="relo-hdr-airplane" id="hdr-airplane-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(45)">
+                    <path d="M21 16V8a2 2 0 0 0-2-2h-3.5l-3-3a1 1 0 0 0-1.5 0v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5v3a1 1 0 0 0 1.5 1l3-3H19a2 2 0 0 0 2-2z"/>
+                  </svg>
+                </div>
+              </div>
+              <span class="relo-distance-text" id="hdr-distance-val">2,030 miles</span>
+              <span class="relo-to-label">to</span>
+            </div>
+            <div class="relo-header-right">
+              <h3 id="hdr-dest-city">Dallas, TX</h3>
+              <span id="hdr-dest-state">Texas</span>
+            </div>
+          </div>
+
+          <!-- 2. FINANCIAL COMPARISON CARDS -->
+          <div class="relo-financial-grid" id="relo-financial-cards">
+            <div class="relo-card">
+              <div class="relo-card-icon">🏠</div>
+              <span class="relo-card-label">HOUSING COST</span>
+              <span class="relo-card-val text-teal" id="card-housing-pct">↓ 42%</span>
+              <span class="relo-card-desc" id="card-housing-desc">Significantly lower in Dallas</span>
+            </div>
+            <div class="relo-card">
+              <div class="relo-card-icon">💸</div>
+              <span class="relo-card-label">EST. TAX BURDEN</span>
+              <span class="relo-card-val text-teal" id="card-tax-pct">↓ 8%</span>
+              <span class="relo-card-desc" id="card-tax-desc">Lower estimated state/local tax burden</span>
+            </div>
+            <div class="relo-card">
+              <div class="relo-card-icon">🛒</div>
+              <span class="relo-card-label">OVERALL LIVING COST</span>
+              <span class="relo-card-val text-teal" id="card-living-pct">↓ 32%</span>
+              <span class="relo-card-desc" id="card-living-desc">More value for your money</span>
+            </div>
+            <div class="relo-card">
+              <div class="relo-card-icon">💰</div>
+              <span class="relo-card-label">ANNUAL SAVINGS POTENTIAL</span>
+              <span class="relo-card-val text-blue" id="card-savings-val">+$23,200</span>
+              <span class="relo-card-desc" id="card-savings-desc">Estimated yearly savings</span>
+            </div>
+          </div>
+
+          <!-- 3 & 4. INTERACTIVE USA MAP & RELOCATION OVERVIEW PANEL -->
+          <div class="relo-map-container-outer">
+            <div class="relo-map-stage" id="relo-map-stage-wrapper">
+              <canvas id="relo-interactive-canvas"></canvas>
+
+              <!-- State hover inspect overlay (Telemetry) -->
+              <div id="relo-state-telemetry" class="relo-telemetry-card">
+                <div class="telemetry-header">
+                  <span id="telemetry-state-name">ARIZONA</span>
+                  <span id="telemetry-state-index">Index: 106</span>
+                </div>
+                <div class="telemetry-row">
+                  <span>Avg Rent:</span> <strong id="telemetry-state-rent">$1,750</strong>
+                </div>
+                <div class="telemetry-row">
+                  <span>Median Income:</span> <strong id="telemetry-state-income">$74,000</strong>
+                </div>
+                <div class="telemetry-row">
+                  <span>Safety Index:</span> <strong id="telemetry-state-safety">72/100</strong>
+                </div>
+              </div>
+
+              <!-- Map instructions hint -->
+              <div class="relo-map-hint">Interactive 3D Map — Hover States to Inspect</div>
+            </div>
+
+            <!-- Floating Relocation Overview Panel (Desktop right side) -->
+            <div class="relo-overview-panel">
+              <h4 class="overview-title">Relocation Overview</h4>
+              
+              <div class="overview-section">
+                <span class="overview-lbl">FROM</span>
+                <span class="overview-city-val" id="overview-from-city">Los Angeles, CA</span>
+                <span class="overview-sub" id="overview-from-sub">High cost, high opportunities</span>
+              </div>
+
+              <div class="overview-section">
+                <span class="overview-lbl">TO</span>
+                <span class="overview-city-val" id="overview-to-city">Dallas, TX</span>
+                <span class="overview-sub" id="overview-to-sub">Affordable and growing</span>
+              </div>
+
+              <hr class="overview-divider">
+
+              <div class="overview-stats-grid">
+                <div class="overview-stat">
+                  <span>Distance</span>
+                  <strong id="overview-stat-dist">2,030 miles</strong>
+                </div>
+                <div class="overview-stat">
+                  <span>Estimated Move Cost</span>
+                  <strong id="overview-stat-cost">$2,500 – $6,000</strong>
+                </div>
+                <div class="overview-stat">
+                  <span>Time by Flight</span>
+                  <strong id="overview-stat-flight">~3 hours</strong>
+                </div>
+                <div class="overview-stat">
+                  <span>Time by Car</span>
+                  <strong id="overview-stat-car">~29 hours</strong>
+                </div>
+              </div>
+
+              <a href="#city-comparison" class="relo-cta-btn">See Full Comparison →</a>
+              <p class="relo-panel-disclaimer">Estimates are for informational purposes only and may vary based on your situation.</p>
+            </div>
+          </div>
+
+          <!-- Control Options Footbar -->
+          <div class="relo-control-bar">
+            <div class="relo-control-group">
+              <label for="relo-origin">Current City</label>
+              <select id="relo-origin" class="relo-input-select"></select>
+            </div>
+            <div class="relo-control-group">
+              <label for="relo-dest">Destination City</label>
+              <select id="relo-dest" class="relo-input-select"></select>
+            </div>
+            <div class="relo-control-group">
+              <label for="relo-salary">Current Salary ($)</label>
+              <input type="number" id="relo-salary" class="relo-input-number" value="110000" step="5000">
+            </div>
+            <button class="relo-btn-submit" id="btn-analyze-move">Analyze My Move</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. BEST PLACES TO LIVE (FILTER CHIPS + SCORE CARDS) -->
+    <section class="best-places-section">
+      <div class="site-container">
+        <div class="section-header-split">
+          <div>
+            <span class="subhead-badge">DATA RANKINGS</span>
+            <h2 class="section-title">Find a city that fits your life</h2>
+            <p class="section-desc">Scorecards ranked by cost, job market depth, and quality of life.</p>
+          </div>
+          <div class="filter-chips-scroll" id="best-places-chips">
+            <button class="chip active" data-cat="best-overall">Best Overall</button>
+            <button class="chip" data-cat="affordable">Affordable</button>
+            <button class="chip" data-cat="high-salaries">High Salaries</button>
+            <button class="chip" data-cat="families">Families</button>
+            <button class="chip" data-cat="remote">Remote Workers</button>
+            <button class="chip" data-cat="low-taxes">Low Taxes</button>
+          </div>
+        </div>
+
+        <div class="places-cards-grid" id="places-grid-container">
+          <!-- Rendered by data.js & app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 17. PERSONALIZED EXPLORATION ("Where could your salary take you?") -->
+    <section class="salary-destination-section">
+      <div class="site-container">
+        <div class="salary-dest-card">
+          <div class="dest-intro-row">
+            <div>
+              <span class="subhead-badge">EXPAND YOUR HORIZONS</span>
+              <h2 class="section-title">Where could your salary take you?</h2>
+              <p class="section-desc">Enter your earnings to instantly discover cities where your money goes furthest.</p>
+            </div>
+            <div class="dest-input-group">
+              <div class="input-dollar-wrap">
+                <span>$</span>
+                <input type="number" id="dest-salary-input" value="75000" step="5000">
+              </div>
+              <button class="btn-hero-primary" id="btn-find-dest-cities">Find Cities</button>
+            </div>
+          </div>
+
+          <div class="dest-results-columns">
+            <div class="dest-tier-col tier-comfortable">
+              <div class="tier-header">
+                <span class="tier-dot dot-green"></span>
+                <h3>Comfortable</h3>
+                <span class="tier-sub">Significant savings & high buying power</span>
+              </div>
+              <div class="tier-city-list" id="tier-comfortable-list"></div>
+            </div>
+
+            <div class="dest-tier-col tier-moderate">
+              <div class="tier-header">
+                <span class="tier-dot dot-yellow"></span>
+                <h3>Moderate</h3>
+                <span class="tier-sub">Balanced everyday lifestyle</span>
+              </div>
+              <div class="tier-city-list" id="tier-moderate-list"></div>
+            </div>
+
+            <div class="dest-tier-col tier-challenging">
+              <div class="tier-header">
+                <span class="tier-dot dot-coral"></span>
+                <h3>Challenging</h3>
+                <span class="tier-sub">High housing costs require compromises</span>
+              </div>
+              <div class="tier-city-list" id="tier-challenging-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. EXPLORE BY STATE -->
+    <section id="explore-states" class="states-section">
+      <div class="site-container">
+        <div class="section-header-split">
+          <div>
+            <span class="subhead-badge">ALL 50 STATES</span>
+            <h2 class="section-title">Explore America by State</h2>
+            <p class="section-desc">Median incomes, tax structures, and regional housing averages across the nation.</p>
+          </div>
+          <div class="state-search-box">
+            <input type="text" id="state-filter-input" placeholder="Search state (e.g. Florida, Texas, New York)...">
+          </div>
+        </div>
+
+        <div class="states-grid" id="states-grid-container">
+          <!-- Rendered dynamically by data.js & app.js -->
+        </div>
+
+        <div class="all-states-footer-action">
+          <button class="btn-outline-wide" id="btn-show-all-states">Show All 50 States</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. TRENDING QUESTIONS (SEO POWERHOUSE) -->
+    <section class="trending-faq-section">
+      <div class="site-container">
+        <div class="section-header-center">
+          <span class="subhead-badge">COMMON INQUIRIES</span>
+          <h2 class="section-title">What people want to know</h2>
+          <p class="section-desc">Research-backed answers to the most frequently searched relocation and cost queries.</p>
+        </div>
+
+        <div class="faq-cards-grid" id="trending-faq-grid">
+          <!-- Populated by data.js & app.js -->
+          <div class="faq-card">
+            <h3 class="faq-question">How are Crime Indexes determined for cities on LivingCost?</h3>
+            <p class="faq-answer">
+              Crime Indexes are compiled using official law enforcement statistics, FBI Uniform Crime Reporting (UCR) databases, and regional safety perception metrics. The rating spans a scale from 0 to 100, where lower numbers represent safer conditions and fewer reported crimes.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-question">How does local crime rate affect overall living costs?</h3>
+            <p class="faq-answer">
+              While safety has an indirect relationship with living expenses, high-crime areas often suffer from depressed property values and rent rates. Conversely, safer premium neighborhoods command a pricing premium on housing, higher property taxes, and increased demand for homeowner insurance premiums.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-question">Are there states with exceptionally low crime rates and low taxes?</h3>
+            <p class="faq-answer">
+              Yes, states like New Hampshire and Wyoming feature both zero state income tax (or very low tax burden) and consistently rank among the top ten safest states in America, offering a highly cost-efficient and secure lifestyle balance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15. RELOCATION GUIDES (EDITORIAL SECTION) -->
+    <section id="relocation-guides" class="guides-section">
+      <div class="site-container">
+        <div class="section-header-split">
+          <div>
+            <span class="subhead-badge">EDITORIAL EXPERTISE</span>
+            <h2 class="section-title">Relocation & Cost Guides</h2>
+            <p class="section-desc">Comprehensive blueprints covering taxes, moving logistics, and cost optimizations.</p>
+          </div>
+          <a href="#" class="view-all-link">Browse All 120+ Guides →</a>
+        </div>
+
+        <div class="guides-grid" id="guides-grid-container">
+          <!-- Populated by data.js & app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 16. DATA TRUST & CREDIBILITY SECTION -->
+    <section class="data-trust-section">
+      <div class="site-container">
+        <div class="trust-card">
+          <div class="trust-header">
+            <span class="subhead-badge">METHODOLOGY & INTEGRITY</span>
+            <h2 class="section-title">Data you can understand.</h2>
+            <p class="section-desc">LivingCost aggregates, harmonizes, and normalizes public datasets from reputable government agencies and academic economic research institutes.</p>
+          </div>
+
+          <div class="sources-logos-grid">
+            <div class="source-item">
+              <span class="src-code">USCB</span>
+              <span class="src-title">U.S. Census Bureau</span>
+              <span class="src-desc">American Community Survey (ACS) 5-Year Income & Demographics</span>
+            </div>
+            <div class="source-item">
+              <span class="src-code">BLS</span>
+              <span class="src-title">Bureau of Labor Statistics</span>
+              <span class="src-desc">Consumer Price Index (CPI) & Occupational Employment Wage Statistics</span>
+            </div>
+            <div class="source-item">
+              <span class="src-code">HUD</span>
+              <span class="src-title">Dept. of Housing & Urban Dev.</span>
+              <span class="src-desc">50th Percentile Fair Market Rents (FMR) across Zip Codes</span>
+            </div>
+            <div class="source-item">
+              <span class="src-code">IRS</span>
+              <span class="src-title">Internal Revenue Service</span>
+              <span class="src-desc">Federal Tax Brackets & Standard Deduction Guidelines</span>
+            </div>
+            <div class="source-item">
+              <span class="src-code">BEA</span>
+              <span class="src-title">Bureau of Economic Analysis</span>
+              <span class="src-desc">Regional Price Parities (RPP) by Metropolitan Statistical Area</span>
+            </div>
+            <div class="source-item">
+              <span class="src-code">C2ER</span>
+              <span class="src-title">Council for Community & Econ.</span>
+              <span class="src-desc">Inter-City Comparative Cost of Living Index (COLI) Methodology</span>
+            </div>
+          </div>
+
+          <div class="trust-footer-meta">
+            <div class="meta-item">
+              <strong>Last Updated:</strong> <span>September 2026</span>
+            </div>
+            <div class="meta-item">
+              <strong>Update Cadence:</strong> <span>Quarterly Benchmarking</span>
+            </div>
+            <div class="meta-item">
+              <strong>Auditing:</strong> <span>Independent Editorial Oversight</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 18. NEWSLETTER SECTION -->
+    <section class="newsletter-section">
+      <div class="site-container">
+        <div class="newsletter-box">
+          <span class="subhead-badge">STAY INFORMED</span>
+          <h2 class="section-title">Make smarter moves.</h2>
+          <p class="section-desc">Get useful salary, housing, tax, and relocation insights delivered to your inbox without the noise.</p>
+
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you! You have subscribed to LivingCost updates.');">
+            <input type="email" placeholder="Enter your email address..." required aria-label="Email address">
+            <button type="submit" class="btn-hero-primary">Get LivingCost Insights</button>
+          </form>
+          <span class="form-fineprint">Zero spam. Pure independent cost data. Unsubscribe anytime.</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 20. LARGE SEO FOOTER -->
+  <footer id="site-footer">
+    <div class="site-container">
+      <div class="footer-grid-5col">
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <span class="brand-name">LivingCost</span>
+          </div>
+          <p class="footer-tagline">LivingCost — Understand the cost of living before making your next move.</p>
+          <div class="footer-country-badge">
+            <span class="flag">🇺🇸</span> United States Edition
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="col-head">EXPLORE</span>
+          <ul>
+            <li><a href="#popular-cities">U.S. Cities</a></li>
+            <li><a href="#explore-states">50 States</a></li>
+            <li><a href="affordability.html">Affordability Hub</a></li>
+            <li><a href="salary.html">Salaries & Wages</a></li>
+            <li><a href="#popular-cities">Housing & Rent</a></li>
+            <li><a href="#explore-states">State Tax Rates</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="col-head">TOOLS</span>
+          <ul>
+            <li><a href="#city-comparison">City Comparison</a></li>
+            <li><a href="#quick-calculator">Cost Calculator</a></li>
+            <li><a href="#relocation-planner">Relocation Planner</a></li>
+            <li><a href="#salary-explorer">Salary Checker</a></li>
+            <li><a href="#best-places-chips">Best Places Finder</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="col-head">GUIDES</span>
+          <ul>
+            <li><a href="#relocation-guides">Cross-Country Moving</a></li>
+            <li><a href="#relocation-guides">Rent Affordability (30% Rule)</a></li>
+            <li><a href="#relocation-guides">States with No Income Tax</a></li>
+            <li><a href="#relocation-guides">Best Cities for Tech Jobs</a></li>
+            <li><a href="#relocation-guides">Family Relocation Checklist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="col-head">COMPANY & LEGAL</span>
+          <ul>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="methodology.php">Methodology &amp; Sources</a></li>
+            <li><a href="editorial.html">Editorial Policy</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="disclaimer-text">
+          <strong>Disclaimer:</strong> LivingCost provides informational estimates based on public research and government benchmarks. Data is modeled for comparison and does not constitute formal financial, legal, tax, or relocation advice.
+        </p>
+        <div class="copyright-row">
+          <span>© 2026 LivingCost Global Inc. All rights reserved.</span>
+          <span>Designed for modern mobility.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Three.js (r128), GSAP 3.12, ScrollTrigger, D3.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+
+  <!-- Modular Application Scripts -->
+  <script src="data.js"></script>
+  <script src="three-scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
