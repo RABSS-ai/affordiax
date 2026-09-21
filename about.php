@@ -9,6 +9,8 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="output.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="data.css">
+
 
   <!-- Tailwind CSS CDN (Builds integrated with tailwind.config.js classes) -->
   <script src="https://cdn.tailwindcss.com"></script>
